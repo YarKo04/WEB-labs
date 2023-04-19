@@ -23,11 +23,22 @@
     <main>
       <!-- Drawing -->
       <div>
-        <img id = "car-image" src="car-image.png" alt="Car Image">
+        <img style="float:left" id = "car-image" src="car-image.png" alt="Car Image">
+        <ul class="choose_us" style="float:right">
+          <li class ="highlight"><a href="#">Why people choose us?</a>
+            <ul>
+              <li><a href="#">We have a wide selection of cars.</a></li>
+              <li><a href="#">Our prices are competitive.</a></li>
+              <li><a href="#">We offer financing options.</a></li>
+              <li><a href="#">We have a knowledgeable and friendly staff.</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
       
       <!-- Table -->
       <div>
+        <!-- <h2 id ="top_cars">Our top cars:</h2> -->
         <table>
           <thead>
             <tr>
@@ -58,23 +69,13 @@
       
       <!-- Link -->
       <div>
-        <p> You can read about the cars on this <a href="https://en.wikipedia.org/wiki/Car"> page</a>.</p>
+        <p lang ="ua" class="selectors"><b>You</b> can read about the cars on <i>this</i> <a href="https://en.wikipedia.org/wiki/Car"> page</a>.</p>
       </div>
-      
-      <!-- Lists -->
-      <div>
-        <h2 class = "highlight">Why choose us?</h2>
-        <ol>
-          <li>We have a wide selection of cars.</li>
-          <li>Our prices are competitive.</li>
-          <li>We offer financing options.</li>
-          <li>We have a knowledgeable and friendly staff.</li>
-        </ol>
-      </div>
+    
       
       <!-- Form -->
       <div>
-        <h2>Contact Us</h2>
+        <h2 class="kk">Contact Us</h2>
         <form action="#" method="post">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required><br><br>

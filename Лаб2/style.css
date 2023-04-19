@@ -72,6 +72,85 @@ ol {
   margin-left: 40px;
 }
 
+.selectors > b+i {
+  color: red;
+}
+p[lang="ua"] {
+  text-decoration-style: dashed;
+  font-family:monospace;
+}
+
+.kk {
+  color: #250;
+  animation-name:kontur;
+  animation-duration: 4s;
+}
+
+@keyframes kontur {
+  from {  outline-width: none;
+    outline-style: none;}
+  to {  outline-width: 2;
+    outline-style: dotted;}
+}
+.choose_us {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  height: 100%;
+}
+
+.choose_us > li {
+  display: inline-block;
+  position: relative;
+}
+
+.choose_us ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  padding: 0;
+}
+
+.choose_us > li:hover > ul {
+  display: block;
+}
+
+.choose_us ul li {
+  width: 100%;
+  display: list-item;
+  position: relative;
+}
+
+.choose_us a {
+  display: block;
+  padding: 0 50px;
+  color: #333;
+  font-size: 14px;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+.choose_us ul a {
+  line-height: 40px;
+}
+
+.choose_us a:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+.choose_us ul li:hover > a {
+  background-color: #444;
+  color: #fff;
+}
+
+.choose_us > li:hover > a {
+  background-color: #333;
+  color: #fff;
+}
+
 form label {
   display: block;
   margin-bottom: 10px;
@@ -99,6 +178,8 @@ form button {
 form button:hover {
   background-color: #444;
 }
+
+
 
 footer {
   background-color: #420;
