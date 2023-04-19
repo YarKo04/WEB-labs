@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Car Shop</title>
+    <link rel="stylesheet" type="text/css" href="Лаб1/style.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Welcome to our Car-Market!</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Cars</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+      <!-- Drawing -->
+      <div>
+        <img id = "car-image" src="Лаб1/car-image.png" alt="Car Image">
+      </div>
+      
+      <!-- Table -->
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Brand</th>
+              <th>Model</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ford</td>
+              <td>Mustang</td>
+              <td>$35,000</td>
+            </tr>
+            <tr>
+              <td>Chevrolet</td>
+              <td>Camaro</td>
+              <td>$40,000</td>
+            </tr>
+            <tr>
+              <td>Dodge</td>
+              <td>Challenger</td>
+              <td>$38,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <!-- Link -->
+      <div>
+        <p> You can read about the cars on this <a href="https://en.wikipedia.org/wiki/Car"> page</a>.</p>
+      </div>
+      
+      <!-- Lists -->
+      <div>
+        <h2 class = "highlight">Why choose us?</h2>
+        <ol>
+          <li>We have a wide selection of cars.</li>
+          <li>Our prices are competitive.</li>
+          <li>We offer financing options.</li>
+          <li>We have a knowledgeable and friendly staff.</li>
+        </ol>
+      </div>
+      
+      <!-- Form -->
+      <div>
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea><br><br>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2023 Car Shop</p>
+    </footer>
+  </body>
+</html>
