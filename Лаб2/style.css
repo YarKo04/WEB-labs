@@ -1,4 +1,8 @@
 /* Tag selectors */
+|* {
+  margin : 0px;
+  padding : 0px;
+}
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -80,10 +84,10 @@ p[lang="ua"] {
   font-family:monospace;
 }
 
-.kk {
+.kontur {
   color: #250;
   animation-name:kontur;
-  animation-duration: 4s;
+  animation-duration: 2s;
 }
 
 @keyframes kontur {
@@ -150,6 +154,9 @@ p[lang="ua"] {
   background-color: #333;
   color: #fff;
 }
+
+
+
 
 form label {
   display: block;
