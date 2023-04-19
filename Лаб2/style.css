@@ -3,11 +3,11 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   font-size: 16px;
-  color: #333;
+  color: #611;
 }
 
 header {
-  background-color: #333;
+  background-color: #250;
   color: #fff;
   padding: 20px;
 }
@@ -55,7 +55,7 @@ th, td {
 }
 
 th {
-  background-color: #333;
+  background-color: #250;
   color: #fff;
 }
 
@@ -88,7 +88,7 @@ form input, form textarea {
 }
 
 form button {
-  background-color: #333;
+  background-color: #420;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -101,7 +101,7 @@ form button:hover {
 }
 
 footer {
-  background-color: #333;
+  background-color: #420;
   color: #fff;
   padding: 20px;
   text-align: center;
