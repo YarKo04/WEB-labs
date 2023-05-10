@@ -10,6 +10,8 @@ body {
   color: #611;
 }
 
+/* Class selectors */
+
 header {
   background-color: #250;
   color: #fff;
@@ -96,6 +98,7 @@ p[lang="ua"] {
   to {  outline-width: 2;
     outline-style: dotted;}
 }
+
 .choose_us {
   list-style: none;
   margin: 0;
