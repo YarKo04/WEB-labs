@@ -1,85 +1,38 @@
 <!DOCTYPE html>
 <html lang="uk-UA">
 <head>
-  <meta charset="UTF-8">
-  <title>Звіти з лабораторних робіт</title>
-  <link rel="stylesheet" type="text/css" href="../style.css">
+    <meta charset="UTF-8">
+    <title>Масиви - Кокошко</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+        .back-button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
 </head>
 <body>
-<h1>Звіти з лабараторних робіт з дисципліни "WEB орієнтовані технології. Основи FRONTEND та BACKEND розробок."</h1>
-<h2>Бригада № 13</h2>
-<p>Студенти: Кокошко Ярослав(ІП-04), Седуш Михайло(ІП-04)</p>
-
-<div>
-  <button id = "lab1">Лабораторна робота №1</button>
-  <button id = "lab2">Лабораторна робота №2</button>
-  <button id = "lab3">Лабораторна робота №3</button>
-  <button id = "lab4">Лабораторна робота №4</button>
-  <button id = "lab5">Лабораторна робота №5</button>
-  <button id = "lab6">Лабораторна робота №6</button>
-  <button id = "lab7">Лабораторна робота №7</button>
-  <button id = "lab8">Лабораторна робота №8</button>
-  <button id = "lab9">Лабораторна робота №9</button>
-</div>
-
-<!-- Vertical buttons -->
+<a href="javascript:history.back()" class="back-button">Back</a>
 <div class="container">
-  <ul class="list">
-    <li><a class="item" href="arrays-kokoshko.html">Кокошко</a></li>
-    <li><a class="item" href="arrays-sedush.html">Седуш</a></li>
-  </ul>
-
-  <div class="out">
-    <div class="space">
-      <br><b>Завдання:</b>1.Згенерувати значення елементів одновимірного масиву за допомогою генератора псевдовипадкових чисел, задавши кількість елементів масиву з клавіатури. Знайти мінімальний за значенням елемент і записати його на початок масиву, звільнивши для нього місце шляхом зсуву елементів масиву вправо
-      <br>2.Упорядкувати масив у порядку зменшення методом вибору. Надрукувати вхідний та вихідний масив.</br>
-      <br><b>Результат:</b> ⎯ придбати практичні навички роботи з масивами у js-сценаріях. Реалізація програм засовами мови JAVASCRIPT</br>
-      <b>Місце розташування програмного коду веб-застосунку: </b>
-      <a href="https://github.com/YarKo04/WEB-labs" target="_blank">https://github.com/YarKo04/WEB-labs</a>
-      <a href="https://yarko04.github.io/WEB-labs/index.html" target="_blank">https://yarko04.github.io/WEB-labs/index.html</a>
-    </div>
-  </div>
-  
+    <br><b>Завдання (Варіант - 10): </b>1.Згенерувати значення елементів одновимірного масиву за допомогою генератора псевдовипадкових чисел, задавши кількість елементів масиву з клавіатури. Знайти мінімальний за значенням елемент і записати його на початок масиву, звільнивши для нього місце шляхом зсуву елементів масиву вправо
+    <br>2.Упорядкувати масив у порядку зменшення методом вибору. Надрукувати вхідний та вихідний масив.</br>
+    <p><br>Введіть кількість елементів масиву:</p>
+    <input id="elementQty" type="text" value="5">
+    <br><button id="count-button">Згенерувати масив</button>
+    <div class="result"></div><br>
+    <script src="../../Лаб4/arrays-kokoshko.js"></script>
+    <br><b>JS - код</b>
+    <img src="images/js-code.png" alt="js-code" width="600" >
+    <br><b>Посилання на HTML-код сторінки:</b>
+    <a href="https://github.com/YarKo04/WEB-labs/blob/master/zvit/Lab4/arrays-kokoshko.html" target="_blank">https://github.com/YarKo04/WEB-labs/blob/master/zvit/Lab4/arrays-kokoshko.html</a>
 </div>
-
-<script>
-  const lab1 = document.getElementById('lab1');
-  const lab2 = document.getElementById('lab2');
-  const lab3 = document.getElementById('lab3');
-  const lab4 = document.getElementById('lab4');
-  const lab5 = document.getElementById('lab5');
-  const lab6 = document.getElementById('lab6');
-  const lab7 = document.getElementById('lab7');
-  const lab8 = document.getElementById('lab8');
-  const lab9 = document.getElementById('lab9');
-  lab1.addEventListener('click', () => {
-    window.location.href = '../Lab1/Lab1.html';
-  });
-  lab2.addEventListener('click', () => {
-    window.location.href = '../Lab2/lab2.html';
-  });
-  lab3.addEventListener('click', () => {
-    window.location.href = '../Lab3/lab3.html';
-  });
-  lab4.addEventListener('click', () => {
-    window.location.href = 'lab4.html';
-  });
-  lab5.addEventListener('click', () => {
-    window.location.href = '../Lab5/lab5.html';
-  });
-  lab6.addEventListener('click', () => {
-    window.location.href = '../Lab6/lab6.html';
-  });
-  lab7.addEventListener('click', () => {
-    window.location.href = '../Lab7/lab7.html';
-  });
-  lab8.addEventListener('click', () => {
-    window.location.href = '../Lab8/lab8.html';
-  });
-  lab9.addEventListener('click', () => {
-    window.location.href = '../Lab9/lab9.html';
-  });
-</script>
-
 </body>
 </html>
