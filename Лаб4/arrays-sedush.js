@@ -1,6 +1,7 @@
 let sortButton = document.querySelector("#sort");
 const result = document.querySelector(".result");
 let elements = document.querySelector("#elements").value
+
 function toArray(str) {
     let numberArray = String(str).split(',').map(x => parseInt(x));
     return numberArray;
@@ -45,6 +46,7 @@ function task2() {
     let array = toArray(elements)
     let minEven = array.indexOf(findMinEven(array))
     let maxEven = array.indexOf(findMaxEven(array))
+    console.log(minEven,maxEven);
     let temp = array[minEven]
     array[minEven] = array[maxEven]
     array[maxEven] = temp
