@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="uk-UA">
 <head>
   <meta charset="UTF-8">
@@ -22,7 +22,7 @@
   <button id = "lab9">Лабораторна робота №9</button>
 </div>
 
-<!-- Vertical buttons -->
+
 <div class="container">
   <ul class="list">
     <li><a class="item" href="photo.html">Фотогалерея</a></li>
@@ -71,4 +71,55 @@
 </script>
 
 </body>
-</html>
+</html> -->
+
+
+
+
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>
+
+  <link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css'/>
+  <script type='text/javascript' src='unitegallery/themes/default/ug-theme-default.js'></script>
+  <link rel='stylesheet' href='unitegallery/themes/default/ug-theme-default.css' type='text/css'/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="text-part">
+      <h2>Приклад вигляду фото слайдеру</h2>
+  
+      <div id="gallery" style="display:none; width: 500%">
+  
+        <img alt="Image 1 Title" src="imgs/img.png"
+             data-image="imgs/img.png"
+             data-description="Image 1 Description">
+  
+        <img alt="Image 2 Title" src="imgs/img_1.png"
+             data-image="imgs/img_1.png"
+             data-description="Image 2 Description">
+  
+        <img alt="Image 2 Title" src="imgs/img_2.png"
+             data-image="imgs/img_2.png"
+             data-description="Image 3 Description">
+  
+        <img alt="Image 2 Title" src="imgs/img_3.png"
+             data-image="imgs/img_3.png"
+             data-description="Image 4 Description">
+      </div>
+  
+    </div>
+  
+    <script type="text/javascript">
+      jQuery(document).ready(function () {
+        jQuery("#gallery").unitegallery();
+      });
+    </script>
+  </body>
+  </html>
