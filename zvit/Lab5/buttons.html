@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="uk-UA">
 <head>
   <meta charset="UTF-8">
@@ -21,7 +21,9 @@
   <button id = "lab9">Лабораторна робота №9</button>
 </div>
 
-<!-- Vertical buttons -->
+
+
+
 <div class="container">
   <ul class="list">
     <li><a class="item" href="theme.html">Тема. Мета</a></li>
@@ -72,5 +74,107 @@
   });
 </script>
 
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .social-buttons button {
+      width: 100px;
+      padding: 10px;
+      margin: 0 5px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .facebook {
+      background-color: #3b5998;
+      color: #fff;
+    }
+
+    .twitter {
+      background-color: #1da1f2;
+      color: #fff;
+    }
+
+    .instagram {
+      background-color: #c32aa3;
+      color: #fff;
+    }
+
+    .pinterest {
+      background-color: #bd081c;
+      color: #fff;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".facebook").click(function() {
+        // Handle Facebook button click event here
+        window.open("https://www.facebook.com");
+      });
+
+      $(".twitter").click(function() {
+        // Handle Twitter button click event here
+        window.open("https://www.twitter.com");
+      });
+
+      $(".instagram").click(function() {
+        // Handle Instagram button click event here
+        window.open("https://www.instagram.com");
+      });
+
+      $(".pinterest").click(function() {
+        // Handle Pinterest button click event here
+        window.open("https://www.pinterest.com");
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Social Media Buttons</h1>
+
+    <div class="social-buttons">
+      <button class="facebook">Facebook</button>
+      <button class="twitter">Twitter</button>
+      <button class="instagram">Instagram</button>
+      <button class="pinterest">Pinterest</button>
+    </div>
+  </div>
 </body>
 </html>
