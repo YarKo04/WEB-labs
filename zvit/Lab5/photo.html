@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="uk-UA">
 <head>
   <meta charset="UTF-8">
@@ -22,7 +22,6 @@
   <button id = "lab9">Лабораторна робота №9</button>
 </div>
 
-<!-- Vertical buttons -->
 <div class="container">
   <ul class="list">
     <li><a class="item" href="photo.html">Фотогалерея</a></li>
@@ -70,5 +69,79 @@
   });
 </script>
 
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.48/css/unite-gallery.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.48/js/unitegallery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.48/themes/default/ug-theme-default.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Photo Gallery
+      $("#gallery").unitegallery();
+
+      // Photo Slider
+      $("#slider").unitegallery({
+        gallery_theme: "slider"
+      });
+
+      // Video Slider
+      $("#video-slider").unitegallery({
+        gallery_theme: "video",
+        slider_enable_arrows: true,
+        slider_enable_play_button: false,
+        slider_enable_fullscreen_button: true
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Unite Gallery</h1>
+
+    <div id="gallery" style="display:none;">
+      <img alt="Image 1" src="images/image1.jpg">
+      <img alt="Image 2" src="images/image2.jpg">
+      <img alt="Image 3" src="images/image3.jpg">
+    </div>
+
+    <div id="slider" style="display:none;">
+      <img alt="Image 1" src="images/image1.jpg">
+      <img alt="Image 2" src="images/image2.jpg">
+      <img alt="Image 3" src="images/image3.jpg">
+    </div>
+
+    <div id="video-slider" style="display:none;">
+      <div data-type="youtube" data-videoid="jBetoIlnDIM"></div>
+      <div data-type="youtube" data-videoid="jBetoIlnDIM"></div>
+      <div data-type="youtube" data-videoid="jBetoIlnDIM"></div>
+    </div>
+  </div>
 </body>
 </html>
