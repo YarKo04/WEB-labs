@@ -1,73 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.48/css/unite-gallery.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1 {
-      color: #333;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-  </style>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.48/js/unitegallery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.48/themes/default/ug-theme-default.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      // Photo Gallery
-      $("#gallery").unitegallery({
-        gallery_theme: "default"
-      });
-
-      // Photo Slider
-      $("#slider").unitegallery({
-        gallery_theme: "slider"
-      });
-
-      // Video Slider
-      $("#video-slider").unitegallery({
-        gallery_theme: "video",
-        gallery_autoplay: false
-      });
-    });
-  </script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="unitegallery-master/dist/css/unite-gallery.css">
+	<link rel="stylesheet" href="unitegallery-master/dist/themes/default/ug-theme-default.css">
+	<script src="unitegallery-master/dist/js/unitegallery.js"></script>
+	<script src="unitegallery-master/dist/themes/tiles/ug-theme-tiles.js" type="text/javascript"></script>
+	<title>Labwork5</title>
+		<style>
+		table {
+			width: 100%
+		}
+		td{
+			height: 60px;
+			text-align: center;
+			border-radius: 17px;
+			background-color: #f9dd94;
+		}
+		a {
+			text-decoration: none;
+			color: black;
+		}
+		.one{
+			width: 370px;
+			height: 30px ;
+			margin-top: 30px;
+			background-color:#5F9EA0;
+			border-radius: 10px;
+			text-align: center;
+			padding-top:10px ;
+		}
+		.two{
+			width: 170px;
+			height: 40px ;
+			margin-top: 10px;
+			background-color:#5F9EA0;
+			border-radius: 10px;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.container{
+			text-align: center;
+			float:  left;
+		}
+		.main{
+			margin-left: 390px;
+			margin-top: -35%;
+			padding: 10px;
+            border-color: 1px solid black;
+		}
+		@media all and (max-width: 1350px){
+			.img{
+			display:none;
+		}
+	}
+	</style>
+	
 </head>
-<body>
-  <div class="container">
-    <h1>Unite Gallery</h1>
+<body style="background-color: whitesmoke;">
+	
+	<div class="main">
+		<div id="galleryTiles" style="display:none;">
+		<!--./galleryTiles-->
+			<img alt="Image 1" src="images/image1.jpg" data-image="images/image1.jpg" data-description="Image 1 Description">
+			<img alt="Image 2" src="images/image2.jpg" data-image="images/image2.jpg" data-description="Image 2 Description">	
+			<img alt="Image 3" src="images/image3.jpg" data-image="images/image3.jpg" data-description="Image 3 Description">
+			<img alt="Image 4" src="images/image4.jpg" data-image="images/image4.jpg" data-description="Image 4 Description">
+			<img alt="Image 5" src="images/image5.jpg" data-image="images/image5.jpg" data-description="Image 5 Description">
+		</div>
+		<div>
+			<h4>Підключена бібліотека : </h4> 
+			<img src="images/image1.png" width="800" height="110" >
+			<h4>Джава-скріпт код :</h4>
+			<img src="imagess/image1.png" width="500" height="200" >
+		</div>
+	</div>
 
-    <div id="gallery">
-      <img alt="Dog 1" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.thepioneerwoman.com%2Fhome-lifestyle%2Fpets%2Fg36592631%2Fsmall-fluffy-dog-breeds%2F&psig=AOvVaw2Yr2QJCkm6Q2ox69KYHCE3&ust=1685050140131000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJiBn4rzjv8CFQAAAAAdAAAAABAD">
-      <img alt="Dog 2" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.thepioneerwoman.com%2Fhome-lifestyle%2Fpets%2Fg36592631%2Fsmall-fluffy-dog-breeds%2F&psig=AOvVaw2Yr2QJCkm6Q2ox69KYHCE3&ust=1685050140131000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJiBn4rzjv8CFQAAAAAdAAAAABAD">
-      <img alt="Dog 3" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.thepioneerwoman.com%2Fhome-lifestyle%2Fpets%2Fg36592631%2Fsmall-fluffy-dog-breeds%2F&psig=AOvVaw2Yr2QJCkm6Q2ox69KYHCE3&ust=1685050140131000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJiBn4rzjv8CFQAAAAAdAAAAABAD">
-    </div>
+	<script>
+		jQuery(document).ready(function(){
+			jQuery("#galleryTiles").unitegallery({	
+				gallery_theme: "tiles",	
+				tiles_type: "nested"	
+			});	
+		});	
+	</script>
 
-    <div id="slider">
-      <img alt="Dog 1" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.thepioneerwoman.com%2Fhome-lifestyle%2Fpets%2Fg36592631%2Fsmall-fluffy-dog-breeds%2F&psig=AOvVaw2Yr2QJCkm6Q2ox69KYHCE3&ust=1685050140131000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJiBn4rzjv8CFQAAAAAdAAAAABAD">
-      <img alt="Dog 2" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.thepioneerwoman.com%2Fhome-lifestyle%2Fpets%2Fg36592631%2Fsmall-fluffy-dog-breeds%2F&psig=AOvVaw2Yr2QJCkm6Q2ox69KYHCE3&ust=1685050140131000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJiBn4rzjv8CFQAAAAAdAAAAABAD">
-      <img alt="Dog 3" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.thepioneerwoman.com%2Fhome-lifestyle%2Fpets%2Fg36592631%2Fsmall-fluffy-dog-breeds%2F&psig=AOvVaw2Yr2QJCkm6Q2ox69KYHCE3&ust=1685050140131000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJiBn4rzjv8CFQAAAAAdAAAAABAD">
-    </div>
-
-    <div id="video-slider">
-      <div data-type="youtube" data-videoid="jBetoIlnDIM"></div>
-      <div data-type="youtube" data-videoid="jBetoIlnDIM"></div>
-      <div data-type="youtube" data-videoid="jBetoIlnDIM"></div>
-    </div>
-  </div>
 </body>
 </html>
