@@ -119,6 +119,10 @@ button {
     background-color: #f5f5f5;
 }
 
+.test-image {
+    width: 600px;
+}
+
 .tag-images {
     width: 280px;
     display: block;
